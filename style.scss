@@ -1,0 +1,74 @@
+$background: #9CAFB7;
+$table: #F6CA83;
+
+.center-objects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body{
+    @extend .center-objects;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: $background;
+}
+
+.hero{
+    @extend .center-objects;
+    flex-direction: column;
+    width: 350px;
+    height: 572px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: $table;
+    margin-top: 30px;
+}
+
+.hero__bill{
+    @extend .center-objects;
+}
+
+input{
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    margin: 10px 5px;
+    padding-left: 10px;
+
+    ::placeholder{
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+.hero__bill--options{
+    @extend input;
+    cursor: pointer;
+}
+
+.hero__button{
+    width: 100px;
+    height: 30px;
+    padding: 7px 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: 0;
+}
+
+@media only screen and (max-width: 600px){
+
+    .hero{
+        width: 80%;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+}
+
