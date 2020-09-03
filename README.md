@@ -1,2 +1,4 @@
 # Tip-calculator
-Mini JS app that calculates tips
+Mini JS app that calculates tips.
+
+Made with Vanilla Javascript
