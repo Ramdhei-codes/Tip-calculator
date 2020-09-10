@@ -16,16 +16,6 @@ const serviceToNumber = Quality => {
     }
 }
 
-const verifyQuality = () => {
-    if (serviceQuality.value === "Choose an option") {
-        swal({
-            title: 'Error',
-            icon: 'error',
-            text: 'Please choose the quality of the service'
-        })
-        
-    }
-}
 
 function calculate(){
     if (serviceQuality.value === "Choose an option" || billAmount.value === "" || peopleSharing.value === "") {
