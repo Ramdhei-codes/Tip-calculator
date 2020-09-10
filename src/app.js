@@ -10,7 +10,7 @@ const serviceToNumber = Quality => {
         case "Good":
             return 0.1
         case "Regular":
-            return 0.07
+            return 0.05
         case "Bad":
             return 0
     }
